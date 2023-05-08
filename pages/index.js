@@ -11,7 +11,7 @@ export default function Home() {
 
   const getMoviesRequest = async () => {
     try {
-      const url = `http://www.omdbapi.com/?s=home alone&apikey=a8669583`
+      const url = `https://www.omdbapi.com/?s=home alone&apikey=a8669583`
       const response = await fetch(url);
       const resJson = await response.json();
       setMovies(resJson.Search);
@@ -26,7 +26,7 @@ export default function Home() {
 
   const getResults = async (search) => {
     try {
-      const url = `http://www.omdbapi.com/?s=${search}&apikey=a8669583`
+      const url = `https://www.omdbapi.com/?s=${search}&apikey=a8669583`
       const response = await fetch(url);
       const resJson = await response.json();
       setResults(resJson.Search);
