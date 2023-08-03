@@ -31,7 +31,7 @@ export default function Home() {
       const resJson = await response.json();
       setResults(resJson.Search);
     } catch (error) {
-      console.error(error);
+      // console.error(error);
     }
   }
 
